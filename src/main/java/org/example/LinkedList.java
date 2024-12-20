@@ -79,5 +79,5 @@ public class LinkedList {
     // - drawbacks -> can't randomly access, you have to start at the head of the list to access a
     //   random element, have to walk down the list to find the node you're interested in
     // - each node has a value as well as a reference to the next node (a pointer)
-    
+
 }
