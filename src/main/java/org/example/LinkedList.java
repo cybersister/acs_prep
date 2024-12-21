@@ -4,20 +4,6 @@ import java.util.List;
 
 public class LinkedList {
 
-    class ListNode<T> {
-        T value;
-        ListNode<T> next;
-        // reference to an object
-
-        ListNode(T value) {
-            this.value = value;
-        }
-
-        public String toString() {
-            return "ListNode:" + this.value + " -> " + this.next;
-        }
-    }
-
     ListNode<Integer> a = new ListNode<Integer>(1);
     ListNode<Integer> b = new ListNode<Integer>(2);
     ListNode<Integer> c = new ListNode<Integer>(3);

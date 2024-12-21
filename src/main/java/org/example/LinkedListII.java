@@ -2,7 +2,36 @@ package org.example;
 
 public class LinkedListII {
 
+    public ListNode<Integer> solution(ListNode<Integer> head, int value, int index) {
+        ListNode<Integer> currentPointer = head;
+        ListNode<Integer> newNode = new ListNode<Integer>(value);
+        ListNode<Integer> previousPointer = head;
+        // initialize here to head, but we'll immediately change the reference
 
+        if (index <= 0) {
+            newNode.next = head;
+            head = newNode;
+            return head;
+        }
+        // inserted something at the beginning of the list ... what about the end and middle?
+
+        int i = 0;
+        while (i < index && currentPointer != null) {
+            previousPointer = currentPointer;
+            // previous has old
+            currentPointer = currentPointer.next;
+            // current has next
+            i++;
+        }
+
+        newNode.next = previousPointer.next;
+        previousPointer.next = newNode;
+
+        return head;
+    }
+
+
+//************************************************************************************************************
 
     // NOTES:
     // - search by index -> keep a counter of the current index starting from zero, walk down the list
