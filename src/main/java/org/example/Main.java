@@ -8,5 +8,7 @@ public class Main {
 
         System.out.println(linkedList.sampleProblem1(1, 2, 3));
 
+
+
     }
 }
