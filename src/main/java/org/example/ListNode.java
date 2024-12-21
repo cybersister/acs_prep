@@ -13,5 +13,4 @@ public class ListNode<T> {
         return "ListNode:" + this.value + " -> " + this.next;
     }
 
-
 }

@@ -8,6 +8,9 @@ public class LinkedList {
     ListNode<Integer> b = new ListNode<Integer>(2);
     ListNode<Integer> c = new ListNode<Integer>(3);
 
+    public LinkedList() {
+    }
+
     public void example() {
         a.next = b;
         b.next = c;
