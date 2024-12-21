@@ -17,8 +17,7 @@ public class StacksAndQueues {
     class CharacterStack {
         private StackListNode<Character> head = null;
 
-        public CharacterStack() {
-        }
+        public CharacterStack() {}
 
         public void push(Character value) {
             StackListNode<Character> newNode = new StackListNode<Character>(value);
@@ -43,8 +42,7 @@ public class StacksAndQueues {
         }
     }
 
-    public StacksAndQueues() {
-    }
+    public StacksAndQueues() {}
 
     public boolean stackSolution(String sequence) {
         Stack<Character> stack = new Stack<>();

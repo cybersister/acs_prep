@@ -2,8 +2,7 @@ package org.example;
 
 public class LinkedListII {
 
-    public LinkedListII() {
-    }
+    public LinkedListII() {}
 
     public ListNode<Integer> solution(ListNode<Integer> head, int value, int index) {
         ListNode<Integer> currentPointer = head;

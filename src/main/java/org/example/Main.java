@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -73,8 +75,38 @@ public class Main {
         System.out.println("Sequence Ten: " + stacksAndQueues.characterStackSolution(sequence10));
         // 3
 
+        ListNode<Integer> headPrevious = new ListNode<Integer>(1);
+        ListNode<Integer> headCurrent = new ListNode<Integer>(2);
+        ListNode<Integer> headAfter = new ListNode<Integer>(3);
 
+        ListNode<Integer> head = new ListNode<Integer>(1);
 
+        headPrevious.next = headCurrent;
+        headCurrent.next = headAfter;
+
+        head.next = null;
+
+        int value1 = 1;
+        int value2 = 2;
+        int value3 = 5;
+        int value4 = 3;
+
+        IntroductionRecursion introductionRecursion = new IntroductionRecursion();
+        System.out.println("Introduction to Recursion One: "
+                + introductionRecursion.solution(headPrevious, value1));
+
+        System.out.println("Introduction to Recursion Two: "
+                + introductionRecursion.solution(headPrevious, value2));
+
+        System.out.println("Introduction to Recursion Three: "
+                + introductionRecursion.solution(headPrevious, value3));
+
+        System.out.println("Introduction to Recursion Four: "
+                + introductionRecursion.solution(headPrevious, value4));
+
+        System.out.println("Introduction to Recursion Five: "
+                + introductionRecursion.solution(head, value1));
+        // 4
+        
     }
-
 }

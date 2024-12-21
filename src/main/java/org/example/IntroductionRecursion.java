@@ -2,7 +2,28 @@ package org.example;
 
 public class IntroductionRecursion {
 
+    public IntroductionRecursion() {}
 
+    /**
+     * Linearly searches a LinkedList recursively.
+     */
+    public boolean solution(ListNode<Integer> head, int value) {
+        if (head == null) {
+            return false;
+        }
+        // empty list
+
+        if (head.value == value) {
+            return true;
+        }
+
+        return solution(head.next, value);
+        // applies to all the nodes in the list except for the first one
+        // recursive
+    }
+
+
+//************************************************************************************************************
 
     // NOTES:
     // - recursion in a nutshell is a function calling itself to get work done
